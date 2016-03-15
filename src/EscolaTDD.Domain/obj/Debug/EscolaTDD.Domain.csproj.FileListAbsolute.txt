@@ -1,0 +1,5 @@
+C:\AspNet Projetos\Publicos\EscolaTDD\src\EscolaTDD.Domain\bin\Debug\EscolaTDD.Domain.dll
+C:\AspNet Projetos\Publicos\EscolaTDD\src\EscolaTDD.Domain\bin\Debug\EscolaTDD.Domain.pdb
+C:\AspNet Projetos\Publicos\EscolaTDD\src\EscolaTDD.Domain\bin\Debug\DomainValidation.dll
+C:\AspNet Projetos\Publicos\EscolaTDD\src\EscolaTDD.Domain\obj\Debug\EscolaTDD.Domain.dll
+C:\AspNet Projetos\Publicos\EscolaTDD\src\EscolaTDD.Domain\obj\Debug\EscolaTDD.Domain.pdb

@@ -1,0 +1,10 @@
+C:\AspNet Projetos\Publicos\EscolaTDD\tests\EscolaTDD.Domain.Tests\bin\Debug\EscolaTDD.Domain.Tests.dll
+C:\AspNet Projetos\Publicos\EscolaTDD\tests\EscolaTDD.Domain.Tests\bin\Debug\EscolaTDD.Domain.Tests.pdb
+C:\AspNet Projetos\Publicos\EscolaTDD\tests\EscolaTDD.Domain.Tests\bin\Debug\DomainValidation.dll
+C:\AspNet Projetos\Publicos\EscolaTDD\tests\EscolaTDD.Domain.Tests\bin\Debug\EscolaTDD.Domain.dll
+C:\AspNet Projetos\Publicos\EscolaTDD\tests\EscolaTDD.Domain.Tests\bin\Debug\Rhino.Mocks.dll
+C:\AspNet Projetos\Publicos\EscolaTDD\tests\EscolaTDD.Domain.Tests\bin\Debug\EscolaTDD.Domain.pdb
+C:\AspNet Projetos\Publicos\EscolaTDD\tests\EscolaTDD.Domain.Tests\bin\Debug\Rhino.Mocks.xml
+C:\AspNet Projetos\Publicos\EscolaTDD\tests\EscolaTDD.Domain.Tests\obj\Debug\EscolaTDD.Domain.Tests.csprojResolveAssemblyReference.cache
+C:\AspNet Projetos\Publicos\EscolaTDD\tests\EscolaTDD.Domain.Tests\obj\Debug\EscolaTDD.Domain.Tests.dll
+C:\AspNet Projetos\Publicos\EscolaTDD\tests\EscolaTDD.Domain.Tests\obj\Debug\EscolaTDD.Domain.Tests.pdb
