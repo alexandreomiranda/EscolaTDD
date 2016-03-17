@@ -47,11 +47,18 @@
     <Compile Include="Interfaces\Repository\ICursoRepository.cs" />
     <Compile Include="Interfaces\Repository\IMatriculaRepository.cs" />
     <Compile Include="Interfaces\Repository\IRepository.cs" />
+    <Compile Include="Interfaces\Service\IAlunoService.cs" />
+    <Compile Include="Interfaces\Service\ICursoService.cs" />
+    <Compile Include="Interfaces\Service\IMatriculaService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AlunoService.cs" />
+    <Compile Include="Services\CursoService.cs" />
+    <Compile Include="Services\MatriculaService.cs" />
     <Compile Include="Specifications\Alunos\AlunoDeveTerCPFValidoSpecification.cs" />
     <Compile Include="Specifications\Alunos\AlunoDeveTerIdadeEntre6a18Specification.cs" />
     <Compile Include="Specifications\Alunos\AlunoCpfUnicoSpecification.cs" />
     <Compile Include="Specifications\Cursos\CursoUnicoSpecification.cs" />
+    <Compile Include="Specifications\Matriculas\MatriculaFaixaEtariaPorCursoSpecification.cs" />
     <Compile Include="Specifications\Matriculas\MatriculaUnicaSpecification.cs" />
     <Compile Include="Validations\Alunos\AlunoCadastroValidation.cs" />
     <Compile Include="Validations\Alunos\AlunoConsistenteValidation.cs" />
@@ -59,10 +66,7 @@
     <Compile Include="Validations\Documents\CPFValidation.cs" />
     <Compile Include="Validations\Matriculas\MatriculaCadastroValidation.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\Service\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

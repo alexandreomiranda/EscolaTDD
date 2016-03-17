@@ -16,7 +16,7 @@ namespace EscolaTDD.Domain.Tests.Validation
         {
             Curso = new Curso()
             {
-                CodigoCurso = "2EF2016"
+                CodigoCurso = "2EF-2016"
             };
             var stubRepository = MockRepository.GenerateStub<ICursoRepository>();
             stubRepository.Stub(s => s.ObterPorCodigoCurso(Curso.CodigoCurso)).Return(null); // curso não encontrado - null
@@ -29,7 +29,7 @@ namespace EscolaTDD.Domain.Tests.Validation
         {
             Curso = new Curso()
             {
-                CodigoCurso = "2EF2016"
+                CodigoCurso = "2EF-2016"
             };
             var stubRepository = MockRepository.GenerateStub<ICursoRepository>();
             stubRepository.Stub(s => s.ObterPorCodigoCurso(Curso.CodigoCurso)).Return(Curso); // curso encontrado

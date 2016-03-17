@@ -16,5 +16,6 @@ namespace EscolaTDD.Domain.Entities
         public bool Status { get; set; }
         public virtual Curso Curso { get; set; }
         public virtual Aluno Aluno { get; set; }
+        public ValidationResult ValidationResult { get; set; }
     }
 }

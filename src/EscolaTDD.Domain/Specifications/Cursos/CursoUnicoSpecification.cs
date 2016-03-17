@@ -1,11 +1,6 @@
 ﻿using DomainValidation.Interfaces.Specification;
 using EscolaTDD.Domain.Entities;
 using EscolaTDD.Domain.Interfaces.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EscolaTDD.Domain.Specifications.Cursos
 {

@@ -6,5 +6,6 @@ namespace EscolaTDD.Domain.Interfaces.Repository
     public interface IMatriculaRepository : IRepository<Matricula>
     {
         Matricula ObterMatriculaAlunoCurso(Guid aluno, Guid curso);
+        bool ValidarFaixaEtariaPorCurso(Guid aluno, Guid curso);
     }
 }

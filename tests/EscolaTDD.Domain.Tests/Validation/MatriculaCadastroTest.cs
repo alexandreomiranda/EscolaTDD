@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using EscolaTDD.Domain.Entities;
 using System;
 using EscolaTDD.Domain.Interfaces.Repository;
@@ -22,6 +23,7 @@ namespace EscolaTDD.Domain.Tests.Validation
             };
             var stubRepository = MockRepository.GenerateStub<IMatriculaRepository>();
             stubRepository.Stub(s => s.ObterMatriculaAlunoCurso(Matricula.AlunoId, Matricula.CursoId)).Return(null);
+            stubRepository.Stub(s => s.ValidarFaixaEtariaPorCurso(Matricula.AlunoId, Matricula.CursoId)).Return(true);
 
             var matriculaValidation = new MatriculaCadastroValidation(stubRepository);
             Assert.IsTrue(matriculaValidation.Validate(Matricula).IsValid);
@@ -37,9 +39,14 @@ namespace EscolaTDD.Domain.Tests.Validation
             };
             var stubRepository = MockRepository.GenerateStub<IMatriculaRepository>();
             stubRepository.Stub(s => s.ObterMatriculaAlunoCurso(Matricula.AlunoId, Matricula.CursoId)).Return(Matricula);
+            stubRepository.Stub(s => s.ValidarFaixaEtariaPorCurso(Matricula.AlunoId, Matricula.CursoId)).Return(false);
 
             var matriculaValidation = new MatriculaCadastroValidation(stubRepository);
+            var result = matriculaValidation.Validate(Matricula);
+
             Assert.IsFalse(matriculaValidation.Validate(Matricula).IsValid);
+            Assert.IsTrue(result.Erros.Any(e => e.Message == "Aluno já possui matrícula para esse curso!"));
+            Assert.IsTrue(result.Erros.Any(e => e.Message == "Aluno fora da faixa etária para esse curso!"));
         }
     }
 }

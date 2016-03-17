@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using EscolaTDD.Domain.Enum;
+using DomainValidation.Validation;
 
 namespace EscolaTDD.Domain.Entities
 {
@@ -18,6 +19,6 @@ namespace EscolaTDD.Domain.Entities
         public int AnoLetivo { get; set; }
         public virtual ICollection<Matricula> Matriculas { get; set; }
         public virtual ICollection<Aluno> Alunos { get; set; }
-
+        public ValidationResult ValidationResult { get; set; }
     }
 }
